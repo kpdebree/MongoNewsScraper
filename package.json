@@ -1,0 +1,34 @@
+{
+  "name": "mongonewsscraper",
+  "version": "1.0.0",
+  "description": "Webscraper that scrapes news articles to a MongoDB Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpdebree/MongoNewsScraper.git"
+  },
+  "keywords": [
+    "mongo",
+    "news",
+    "scraper"
+  ],
+  "author": "kpdebree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpdebree/MongoNewsScraper/issues"
+  },
+  "homepage": "https://github.com/kpdebree/MongoNewsScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "favicon": "0.0.2",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.13.9",
+    "request": "^2.83.0"
+  }
+}
