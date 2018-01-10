@@ -1,0 +1,48 @@
+<div class="content row">
+
+  <nav class="bg-info navbar-inverse">
+    <div>
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="navigation"><a href="/">Reddit Politics</a></li>
+        <li role="presentation" class="navigation"><a href="/">Home</a></li>
+        <li role="presentation" class="navigation"><a href="/save/articles">Saved Articles</a></li>
+        <li><a href="/scrape"><button type="submit" class="btn btn-success">Scrape Articles</button></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="banner col-md-12">  
+      <h1>Reddit Politics</h1>
+      <p>Front page of /r/politics</p>
+    </div>
+  </div>
+
+  {{#if newsArticles}}
+    <div class="articleContainer row">
+      {{#each newsArticles}}
+        <div class="article">
+          <div class="panel">
+            <div class="panel-heading row bg-info navbar-inverse">
+              <div class="col-md-11 title">
+                <h3>{{this.title}}</h3>
+              </div>
+              <div class="col-md-1 link">
+                <a href="#"><button type="submit" class="btn btn-success save" data-id={{this.id}}>Save Article</button></a>
+              </div>
+            </div>
+            <div class="panel-body">{{this.link}}  
+            </div>
+          </div> 
+        </div>  
+      {{/each}}
+    </div>  
+  {{else}}
+    <div class="noArticles">
+      <h2>Please scrape articles to view the latest news</h2>
+    </div>
+  {{/if}}
+</div>
+<footer class="footer row">
+  <p></p>
+</footer>
