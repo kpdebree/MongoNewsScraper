@@ -2,7 +2,7 @@
   "name": "mongonewsscraper",
   "version": "1.0.0",
   "description": "Webscraper that scrapes news articles to a MongoDB Database",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
